@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umapathy's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/867b9dc77f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 style="font-size: 3rem;font-family: cursive;font-weight: 700;text-shadow: 3px 5px 16px rgb(27, 27, 27);"><span style="color: rgb(255, 0, 0);font-family: cursive;">U</span>mapathy<span style="color: rgb(255, 0, 0);font-family: cursive;">.</span></h1>
+
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Java FullStack-Developer</p>
+                <h1>Hi, I'm  <span>Umapathy</span><br>From Chennai</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------About------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="imgs/aboutme.jpg" alt="" height="450px" width="450px">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Highly motivated and detail-oriented BCA Computer Applications graduate with a passion for software development. Demonstrated ability to develop innovative solutions and collaborate effectively in team environments. Adaptable, fast learner, and committed to deliver high-quality code.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links " onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Projects')">Projects</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Application Developement</span><br>Java, JDBC, Servlets</li>
+                            <li><span>Web Developement</span><br>HTML5, CSS3, JavaScript, Bootstrap.</li>
+                            <li><span>Back-End Developement</span><br>MYSQL, Oracle SQL</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2024-Current</span><br>Java FullStack-Developement Training at Qspiders-Chennai</li>
+                            <li><span>2023</span><br>Interned at CEIPAL Software pvt-ltd.</li>
+                            <li><span>2023</span><br>BCA in Computer Applications with CGPA-8.05 From Islamiah Arts and Science College, Vaniyambadi.</li>
+                            <li><span>2020</span><br> 66.6% in Higher Secondary From Brindavan Matric Hr.Sec School, Nattrampalli.</li>
+                            <li><span>2018</span><br> 88.2% in SSLC From Brindavan Matric Hr.Sec School, Nattrampalli.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Projects">
+                        <ul>
+                            <li><span>MyTunes Website</span><br>Using HTML5 and CSS3.</li>
+                            <li><span>ToDoList</span><br>Using Java Servlets, JDBC and MYSQL for Backend.</li>
+                            <li><span>MyPortfolio</span><br>Using HTML, CSS and JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------services----------- -->
+
+  <div id="services" >
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>FrontEnd Developement</h2>
+                <p>Innovative and detail-oriented Fresher Front End Developer with a passion for creating responsive and user-friendly websites using Modern Technologies like HTML CSS, JavaScript and Bootstrap.</p>
+                <a href="#">Learn More..</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Application Developement</h2>
+                <p>Strong in design and integration with intuitive problem-solving skills. Proficient in JAVA. Passionate about implementing and launching new projects. Ability to
+                translate business requirements into technical solutions.</p>
+                <a href="#">Learn More..</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-gears"></i>
+                <h2>BackEnd Developement</h2>
+                <p>Skilled in MYSQL Database and Oracle SQL. Skilled with collaborating with back-end developers, utilizing version control systems, and staying up-to-date on emerging technologies like Git and GitHub.</p>
+                <a href="#">Learn More..</a>
+            </div>
+        </div>
+    </div>
+  </div>
+
+<!-- -----------------portfolio--------- -->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="imgs/todolist.jpeg" alt="" width="300px" height="250px">
+                <div class="layer">
+                    <h4>ToDoList</h4>
+                    <p>Todo List- An Application specially built to keep track of tasks that need to do. Once they are done with theirtasks, they can also remove them from the list.
+                    Technologies Used: JDBC, Servlet and MYSQL</p>
+                    <a href="#"><i class="fa-regular fa-folder-open"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="imgs/mytunes.jpeg" alt="" width="300px" height="250px">
+                <div class="layer">
+                    <h4>MyTunes</h4>
+                    <p>Designed a MyTunes webpage using Html and Css.
+                        Crafted a visually appearing user interface with
+                        responsive design. Utilized HTML for structuring content and CSS for styling the content.</p>
+                    <a href="#"><i class="fa-regular fa-folder-open"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="imgs/Portfolio.jpeg" alt="" width="300px" height="250px">
+                <div class="layer">
+                    <h4>MyPortfolio</h4>
+                    <p>MyPortfolio webpage is designed using HTML CSS and JavaScript with an attractive user interface and with responsive design.</p>
+                    <a href="#"><i class="fa-regular fa-folder-open"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more..</a>
+    </div>
+</div>
+
+
+<!-- ------------------contact--------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>   umapathyajith8@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>    9597147618</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/Umapathyajith"><i class="fa-brands fa-github"></i></a>
+                        <a href="http://www.linkedin.com/in/umapathy-a-5b9264246"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/umapathy_ajith?igsh=dmZ3cWJiZmlhb2Vl"><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <a href="imgs/images/Umapathy A.pdf" download class="btn btn2">Download CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                  <input type="text" name="Name" placeholder="Your Name" required>
+                  <input type="email" name="Email" placeholder="Your email" required>
+                  <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                  <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Umapathy. <i class="fa-solid fa-user"></i> Personal Portfolio </p>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script>
+
+     var tablinks=document.getElementsByClassName("tab-links");
+     var tabcontents=document.getElementsByClassName("tab-contents");
+     function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+     }
+
+    </script>
+    
+    <script>
+
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = '<https://script.google.com/macros/s/AKfycbz-mRaLxW3PahLCSiMY1YnfbU41DDE6cGRG5867-E6niqJ1rRYa6wc4PFAjCok4ywA4NQ/exec>'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg");
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully";
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
